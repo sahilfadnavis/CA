@@ -9,11 +9,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <script src="https://unpkg.com/feather-icons"></script>
   <link rel="icon" href="./Axis fav.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Caveat:wght@500&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            caveat: ['Caveat', 'cursive'],
+          },
+        },
+      },
+    };
+  </script>
 </head>
 
 <body>
-  <div class="overflow-x-hidden relative w-full bg-[url('Bg.png')] bg-cover bg-center">
-    <!--Navbar-->
+
+    <!-- Navbar + Hero-Section-->
+  <div class="overflow-x-hidden relative w-full bg-black bg-cover bg-center">
+
     <nav class>
       <div class="relative w-[1080px] mx-auto flex items-center justify-between ">
 
@@ -65,7 +84,7 @@
 
           <li class="text-white font-mullish font-medium py-7 hover:text-lightBlue cursor-pointer
             transition-all duration-200 relative group">
-            <a href="#">Contect us!</a>
+            <a href="#">Contact us!</a>
 
             <div class="absolute bottom-0 w-full h-1 bg-lightBlue hidden group-hover:block
            transition-all duration-200"></div>
@@ -107,9 +126,389 @@
           hover:bg-lightBlue500 transition-all duration-200">Register Now!</button>
         </div>
         <!--right part-->
-        <img src="./Team goals-pana.png" alt="" class="float-right w-1/2">
+        <img src="" alt="" class="float-right w-1/2">
       </div>
-  </section>
+    </section>
+  </div>
+ 
+  <!--FAQs -->
+  <div class="relative flex w-full mx-auto overflow-hidden bg-slate-50 pb-10 shadow-xl  ring-gray-900/5 sm:mx-auto sm:max-w-2xl  sm:px-10 ">
+    <div class="mx-auto px-5 w-[1080px]">
+      <div class="flex flex-col items-center">
+        <h2 class="mt-5 text-center text-3xl font-bold tracking-tight md:text-5xl">FAQ</h2>
+        <p class="mt-3 text-lg text-neutral-500 md:text-xl">Frequenty asked questions
+        </p>
+      </div>
+      <div class="mx-auto mt-8 grid max-w-xl divide-y divide-neutral-200">
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span> How does the billing work?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-neutral-600">Springerdata offers a variety of
+              billing options, including monthly and annual subscription plans, as well as pay-as-you-go
+              pricing for certain services. Payment is typically made through a credit card or other
+              secure online payment method.
+            </p>
+          </details>
+        </div>
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span> Can I get a refund for my subscription?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-neutral-600">We offer a 30-day money-back
+              guarantee for most of its subscription plans. If you are not satisfied with your
+              subscription within the first 30 days, you can request a full refund. Refunds for
+              subscriptions that have been active for longer than 30 days may be considered on a
+              case-by-case basis.
+            </p>
+          </details>
+        </div>
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span> How do I cancel my subscription?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-neutral-600">To cancel your subscription, you can
+              log in to your account and navigate to the subscription management page. From there, you
+              should be able to cancel your subscription and stop future billing.
+            </p>
+          </details>
+        </div>
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span> How do I cancel my subscription?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-neutral-600">To cancel your subscription, you can
+              log in to your account and navigate to the subscription management page. From there, you
+              should be able to cancel your subscription and stop future billing.
+            </p>
+          </details>
+        </div>
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span> Is there a free trial?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-neutral-600">We offer a free trial of our software
+              for a limited time. During the trial period, you will have access to a limited set of
+              features and functionality, but you will not be charged.
+            </p>
+          </details>
+        </div>
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span> How do I contact support?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-neutral-600">If you need help with our platform or
+              have any other questions, you can contact the company's support team by submitting a support
+              request through the website or by emailing support@ourwebsite.com.
+            </p>
+          </details>
+        </div>
+        <div class="py-5">
+          <details class="group">
+            <summary class="flex cursor-pointer list-none items-center justify-between font-medium">
+              <span> Do you offer any discounts or promotions?</span>
+              <span class="transition group-open:rotate-180">
+                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                  <path d="M6 9l6 6 6-6"></path>
+                </svg>
+              </span>
+            </summary>
+            <p class="group-open:animate-fadeIn mt-3 text-neutral-600">We may offer discounts or promotions
+              from time to time. To stay up-to-date on the latest deals and special offers, you can sign
+              up for the company's newsletter or follow it on social media.
+            </p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Timeline -->
+  <div class="relative font-inter antialiased">
+    <main class="relative min-h-screen flex flex-col justify-center bg-slate-50 overflow-hidden">
+      <div class="flex items-center justify-center mt-9">
+        <p class="text-7xl font-caveat font-bold">Timeline</p>
+      </div>
+      <div class="w-full max-w-6xl mx-auto px-4 md:px-4 py-4">
+        <div class="flex flex-col justify-center divide-y divide-slate-200 ">
+          <div class="w-full max-w-3xl mx-auto">
+            
+            <!-- Vertical Timeline #1 -->
+            <div class="-my-2">
+
+              <!-- Item #1 -->
+              <div class="relative pl-8 sm:pl-32 py-6 group">
+                <!-- Purple label -->
+                <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The origin</div>
+                <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                <div
+                  class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                  <time
+                    class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">May,
+                    2020</time>
+                  <div class="text-xl font-bold text-slate-900">Acme was founded in Milan, Italy</div>
+                </div>
+                <!-- Content -->
+                <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                  Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+              </div>
+
+              <!-- Item #2 -->
+              <div class="relative pl-8 sm:pl-32 py-6 group">
+                <!-- Purple label -->
+                <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The milestone</div>
+                <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                <div
+                  class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                  <time
+                    class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">May,
+                    2021</time>
+                  <div class="text-xl font-bold text-slate-900">Reached 5K customers</div>
+                </div>
+                <!-- Content -->
+                <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                  Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+              </div>
+
+              <!-- Item #3 -->
+              <div class="relative pl-8 sm:pl-32 py-6 group">
+                <!-- Purple label -->
+                <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The acquisitions</div>
+                <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                <div
+                  class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                  <time
+                    class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">May,
+                    2022</time>
+                  <div class="text-xl font-bold text-slate-900">Acquired various companies, inluding Technology Inc.
+                  </div>
+                </div>
+                <!-- Content -->
+                <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                  Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+              </div>
+
+              <!-- Item #4 -->
+              <div class="relative pl-8 sm:pl-32 py-6 group">
+                <!-- Purple label -->
+                <div class="font-caveat font-medium text-2xl text-indigo-500 mb-1 sm:mb-0">The IPO</div>
+                <!-- Vertical line (::before) ~ Date ~ Title ~ Circle marker (::after) -->
+                <div
+                  class="flex flex-col sm:flex-row items-start mb-1 group-last:before:hidden before:absolute before:left-2 sm:before:left-0 before:h-full before:px-px before:bg-slate-300 sm:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-3 after:absolute after:left-2 sm:after:left-0 after:w-2 after:h-2 after:bg-indigo-600 after:border-4 after:box-content after:border-slate-50 after:rounded-full sm:after:ml-[6.5rem] after:-translate-x-1/2 after:translate-y-1.5">
+                  <time
+                    class="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-emerald-600 bg-emerald-100 rounded-full">May,
+                    2023</time>
+                  <div class="text-xl font-bold text-slate-900">Acme went public at the New York Stock Exchange</div>
+                </div>
+                <!-- Content -->
+                <div class="text-slate-500">Pretium lectus quam id leo. Urna et pharetra pharetra massa massa.
+                  Adipiscing enim eu neque aliquam vestibulum morbi blandit cursus risus.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full max-w-3xl mx-auto">
+
+            <!-- Vertical Timeline #2 -->
+            <div
+              class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+
+              <!-- Item #1 -->
+              <div
+                class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+              </div>
+
+
+            </div>
+    </main>
+
+  </div>
+
+  <section class="bg-white dark:bg-gray-900">
+    <div class="container flex items-center justify-center min-h-screen px-6 mx-auto">
+        <form class="w-full max-w-md">
+            <img class="w-auto h-7 sm:h-8" src="./Axis.png" alt="">
+
+            <h1 class="mt-3 text-2xl font-semibold text-gray-800 capitalize sm:text-3xl dark:text-white">sign In</h1>
+
+            <div class="relative flex items-center mt-8">
+                <span class="absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                </span>
+
+                <input type="email" class="block w-full py-3 text-gray-700 bg-white border rounded-lg px-11 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Email address">
+            </div>
+
+            <div class="relative flex items-center mt-4">
+                <span class="absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-3 text-gray-300 dark:text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                </span>
+
+                <input type="password" class="block w-full px-10 py-3 text-gray-700 bg-white border rounded-lg dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-blue-400 dark:focus:border-blue-300 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Password">
+            </div>
+
+            <div class="mt-6">
+                <button class="w-full px-6 py-3 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-lg hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                    Sign in
+                </button>
+
+                <p class="mt-4 text-center text-gray-600 dark:text-gray-400">or sign in with</p>
+
+                <a href="#" class="flex items-center justify-center px-6 py-3 mt-4 text-gray-600 transition-colors duration-300 transform border rounded-lg dark:border-gray-700 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-600">
+                    <svg class="w-6 h-6 mx-2" viewBox="0 0 40 40">
+                        <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.045 27.2142 24.3525 30 20 30C14.4775 30 10 25.5225 10 20C10 14.4775 14.4775 9.99999 20 9.99999C22.5492 9.99999 24.8683 10.9617 26.6342 12.5325L31.3483 7.81833C28.3717 5.04416 24.39 3.33333 20 3.33333C10.7958 3.33333 3.33335 10.7958 3.33335 20C3.33335 29.2042 10.7958 36.6667 20 36.6667C29.2042 36.6667 36.6667 29.2042 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="#FFC107" />
+                        <path d="M5.25497 12.2425L10.7308 16.2583C12.2125 12.59 15.8008 9.99999 20 9.99999C22.5491 9.99999 24.8683 10.9617 26.6341 12.5325L31.3483 7.81833C28.3716 5.04416 24.39 3.33333 20 3.33333C13.5983 3.33333 8.04663 6.94749 5.25497 12.2425Z" fill="#FF3D00" />
+                        <path d="M20 36.6667C24.305 36.6667 28.2167 35.0192 31.1742 32.34L26.0159 27.975C24.3425 29.2425 22.2625 30 20 30C15.665 30 11.9842 27.2359 10.5975 23.3784L5.16254 27.5659C7.92087 32.9634 13.5225 36.6667 20 36.6667Z" fill="#4CAF50" />
+                        <path d="M36.3425 16.7358H35V16.6667H20V23.3333H29.4192C28.7592 25.1975 27.56 26.805 26.0133 27.9758C26.0142 27.975 26.015 27.975 26.0158 27.9742L31.1742 32.3392C30.8092 32.6708 36.6667 28.3333 36.6667 20C36.6667 18.8825 36.5517 17.7917 36.3425 16.7358Z" fill="#1976D2" />
+                    </svg>
+
+                    <span class="mx-2">Sign in with Google</span>
+                </a>
+
+                <div class="mt-6 text-center ">
+                    <a href="#" class="text-sm text-blue-500 hover:underline dark:text-blue-400">
+                        Don’t have an account yet? Sign up
+                    </a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+   <!-- FOOTER -->
+  <footer class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-8 mx-auto">
+      <div class="flex flex-col items-center text-center">
+        <a href="#">
+          <img class="w-auto h-12" src="./Axis.png" alt="">
+        </a>
+
+        <div class="flex flex-wrap justify-center mt-6 -mx-4">
+          <a href="#"
+            class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+            aria-label="Reddit"> Home </a>
+
+          <a href="#"
+            class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+            aria-label="Reddit"> About </a>
+
+          <a href="#"
+            class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+            aria-label="Reddit"> Teams </a>
+
+          <a href="#"
+            class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+            aria-label="Reddit"> Privacy </a>
+
+          <a href="#"
+            class="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+            aria-label="Reddit"> Cookies </a>
+        </div>
+
+      </div>
+
+      <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
+
+      <div class="flex flex-col items-center sm:flex-row sm:justify-between">
+        <p class="text-sm text-gray-500 dark:text-gray-300">© Copyright 2023. All Rights Reserved.</p>
+
+        <div class="flex -mx-2">
+          <a href="#"
+            class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+            aria-label="instagram">
+            <svg
+            width="20"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
+              fill="currentColor"
+            />
+            <path
+              d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+              fill="currentColor"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+              fill="currentColor"
+            />
+          </svg>
+          </a>
+
+          <a href="#"
+            class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+            aria-label="Facebook">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z">
+              </path>
+            </svg>
+          </a>
+
+          <a href="#"
+            class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+            aria-label="Github">
+            <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
 
 </body>
 </html>
